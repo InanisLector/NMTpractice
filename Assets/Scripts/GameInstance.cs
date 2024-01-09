@@ -28,8 +28,6 @@ public class GameInstance : MonoBehaviour
         BasicQuestionData bqd = _parsedBasicQuestions[0].ToBasicQuestionData();
         questionText.text = bqd.Question;
 
-        Debug.Log($"{bqd.Answers.Length}, {answersText.Length}");
-
         for (int i = 0; i < 4; i++)
             answersText[i].text = bqd.Answers[i];
     }
